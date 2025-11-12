@@ -1,0 +1,113 @@
+/* General Layout */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  background: linear-gradient(to bottom right, #ffdee9, #b5fffc);
+  color: #333;
+}
+
+/* Header */
+header {
+  background: #ff69b4;
+  color: white;
+  text-align: center;
+  padding: 2rem 1rem;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.3rem;
+}
+
+header p {
+  font-style: italic;
+  margin-bottom: 1rem;
+}
+
+/* Navigation Bar */
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 8px 15px;
+  border-radius: 20px;
+  transition: background 0.3s, transform 0.2s;
+}
+
+nav ul li a:hover {
+  background: white;
+  color: #ff69b4;
+  transform: scale(1.05);
+}
+
+/* Sections */
+.section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.section h2 {
+  color: #ff1493;
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.section p {
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.8;
+}
+
+/* Skills */
+.skills-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+}
+
+.skills-list li {
+  background: white;
+  color: #ff69b4;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 30px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+}
+
+.skills-list li:hover {
+  transform: scale(1.1);
+}
+
+/* Education Box */
+.education p {
+  background: rgba(255, 255, 255, 0.8);
+  margin: 10px auto;
+  padding: 10px;
+  border-radius: 10px;
+  max-width: 600px;
+  box-shadow: 0 1px 5px rgba(0,0,0,0.1);
+}
+
+/* Footer */
+footer {
+  background: #ff69b4;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  font-size: 0.9rem;
+  box-shadow: 0 -3px 8px rgba(0, 0, 0, 0.1);
+}

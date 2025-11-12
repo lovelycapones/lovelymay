@@ -111,3 +111,59 @@ footer {
   font-size: 0.9rem;
   box-shadow: 0 -3px 8px rgba(0, 0, 0, 0.1);
 }
+
+/* Overall responsive adjustments */
+@media (max-width: 1024px) {
+    /* Slightly smaller text and images for tablets */
+    h1 { font-size: 28px; }
+    h2 { font-size: 26px; }
+    p  { font-size: 16px; }
+
+    .container {
+        width: 95%;
+    }
+
+    .profile-img {
+        width: 200px;
+        height: auto;
+    }
+
+    .skills-grid {
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    }
+}
+
+@media (max-width: 768px) {
+    /* For smaller tablets and large phones */
+    header nav ul li {
+        display: block;
+        margin: 8px 0;
+    }
+
+    .hero {
+        padding: 50px 0;
+    }
+
+    h1 { font-size: 24px; }
+    h2 { font-size: 22px; }
+    p  { font-size: 15px; }
+
+    .profile-img {
+        width: 160px;
+    }
+}
+
+@media (max-width: 480px) {
+    /* For mobile phones */
+    h1 { font-size: 20px; }
+    h2 { font-size: 18px; }
+    p  { font-size: 14px; }
+
+    .profile-img {
+        width: 120px;
+    }
+
+    .skills-grid {
+        grid-template-columns: 1fr; /* stack skill cards vertically */
+    }
+}
